@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Tavern.unity
+    guid: 6e3cac7f44335f64082b248bdebc4567
+  - enabled: 0
+    path: Assets/Scenes/Restaurant.unity
+    guid: 6833b516b0a426d41a61cefc3157081a
+  - enabled: 0
+    path: Assets/Scenes/Cafe.unity
+    guid: 01dcc66baf21ee24eb981ac99998931e
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 55d120e011ba72d48a8be7d9f4b19cfa
+  - enabled: 1
+    path: Assets/Scenes/Abigail.unity
+    guid: f0024d1261b741143b8576ca1233b6e1
+  - enabled: 1
+    path: Assets/Scenes/Britney.unity
+    guid: 94eea71dbd7a5f343b1416e9249d7f85
+  - enabled: 1
+    path: Assets/Scenes/Cindy.unity
+    guid: 5816fe4924e0d4046a65240e90e08765
