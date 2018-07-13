@@ -1,6 +1,6 @@
 Version: Unity 2017.4.1 f1
 
-Engage AR is a social demo developed using ARCore and IBM Watson. 
+Engage AR is an augmented reality conversational demo developed using ARCore and IBM Watson. 
 
 The Watson services utilized are Assistant, Speech To Text, and Text To Speech.
 
@@ -16,4 +16,10 @@ Usage Instructions:
 4. Move phone around space to detect surfaces
 5. Tap on detected plane to add AI to environment
 6. Talk to her!
- 
+
+Tip: To select a different female, tap the back arrow on the top left of your screen.
+
+
+Developed by Tyler C. Roach
+
+www.tylercroach.me
