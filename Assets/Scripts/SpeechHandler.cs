@@ -19,7 +19,7 @@ public class SpeechHandler : MonoBehaviour
     private string _microphoneID = null;
     private AudioClip _recording = null;
     private int _recordingBufferSize = 1;
-    private int _recordingHZ = 22050;
+    private int _recordingHZ = 44100;
 
     void Start()
     {
