@@ -48,10 +48,10 @@ public class TextHandler : MonoBehaviour {
 
     public IEnumerator PlayClip(AudioClip clip)
     {
-        person.GetComponent<Salsa3D>().SetAudioClip(clip);
-        person.GetComponent<Salsa3D>().Play();
         GetComponent<SpeechHandler>().StopRecording();
         GetComponent<SpeechHandler>().Active = false;
+        person.GetComponent<Salsa3D>().SetAudioClip(clip);
+        person.GetComponent<Salsa3D>().Play();
         yield return new WaitUntil(() => !person.GetComponent<AudioSource>().isPlaying);
         GetComponent<SpeechHandler>().Active = true;
         GetComponent<SpeechHandler>().StartRecording();

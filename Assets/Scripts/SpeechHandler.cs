@@ -19,7 +19,7 @@ public class SpeechHandler : MonoBehaviour
     private string _microphoneID = null;
     private AudioClip _recording = null;
     private int _recordingBufferSize = 1;
-    private int _recordingHZ = 44100;
+    private int _recordingHZ;
 
     void Start()
     {
@@ -101,6 +101,11 @@ public class SpeechHandler : MonoBehaviour
     private IEnumerator RecordingHandler()
     {
         Log.Debug("ExampleStreaming.RecordingHandler()", "devices: {0}", Microphone.devices);
+
+        int min = 0;
+        int max = 0;
+        Microphone.GetDeviceCaps(_microphoneID, out min, out max);
+        _recordingHZ = max;
         _recording = Microphone.Start(_microphoneID, true, _recordingBufferSize, _recordingHZ);
         yield return null;      // let _recordingRoutine get set..
 
