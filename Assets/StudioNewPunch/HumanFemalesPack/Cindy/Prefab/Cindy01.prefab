@@ -721,12 +721,9 @@ GameObject:
   m_Component:
   - component: {fileID: 414822}
   - component: {fileID: 9512274}
-  - component: {fileID: 82835433177783740}
-  - component: {fileID: 114494175647488760}
-  - component: {fileID: 114025521676636896}
   m_Layer: 0
   m_Name: Cindy01
-  m_TagString: AI
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1610,7 +1607,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.754, y: 0.096, z: 8.578}
+  m_LocalPosition: {x: -1.067, y: 0, z: 0.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 472158}
@@ -1838,7 +1835,6 @@ Transform:
   - {fileID: 421136}
   - {fileID: 420844}
   - {fileID: 459638}
-  - {fileID: 4587186859520908}
   m_Father: {fileID: 444934}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2721,10 +2717,10 @@ Animator:
   m_GameObject: {fileID: 153670}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: cf703a5471edb4a479c7754e2c553991, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8724771dff513e840b659ac5d1eddcb5, type: 2}
-  m_CullingMode: 2
+  m_Controller: {fileID: 0}
+  m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -3678,289 +3674,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153670}
   m_IsPrefabParent: 1
---- !u!1 &1964493712022166
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4587186859520908}
-  - component: {fileID: 114531017440561508}
-  m_Layer: 0
-  m_Name: RandomEyes3D_Eye_Position
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4587186859520908
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1964493712022166}
-  m_LocalRotation: {x: -0.47865486, y: 0.52047044, z: 0.47865486, w: 0.52047044}
-  m_LocalPosition: {x: -0.06286302, y: 0.07655847, z: -0.000005722046}
-  m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
-  m_Children: []
-  m_Father: {fileID: 436128}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82835433177783740
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153670}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
---- !u!114 &114025521676636896
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1624661579, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  salsa3D: {fileID: 0}
-  skinnedMeshRenderer: {fileID: 13742596}
-  prevSkinnedMeshRenderer: {fileID: 13742596}
-  getSkndMshRndr: 0
-  blendShapes:
-  - blend.emote_Scared
-  - blend.emote_Ecstatic
-  - blend.emote_Surprised
-  - blend.emote_AngryOther
-  - blend.emote_AngryExtreme
-  - blend.emote_Frown
-  - blend.emote_Smile
-  - blend.shape_WinkR
-  - blend.shape_EyesSquint
-  - blend.shape_WinkL
-  - blend.shape_SmileR
-  - blend.shape_SmileL
-  - blend.shape_browUpL
-  - blend.shape_browUpR
-  - blend.shape_EyesOpen
-  - blend.shape_mouthO
-  - blend.shape_EyesClose
-  - blend.shape_browsDown
-  - blend.shape_browsClosed
-  - blend.shape_browsUp
-  - blend.shape_smileOpen
-  - blend.shape_smileClosed
-  lookUpIndex: 20
-  lookDownIndex: 20
-  lookLeftIndex: 20
-  lookRightIndex: 20
-  blinkIndex: 16
-  lookRandPosition: {x: 0, y: 0, z: 0}
-  lookAmount:
-    lookUp: 0
-    lookDown: 0
-    lookLeft: 0
-    lookRight: 0
-    blink: 0
-  randomEyes: 1
-  maxRandomInterval: 3
-  blendSpeed: 15
-  rangeOfMotion: 50
-  blinkDuration: 0.05
-  blinkSpeed: 50
-  openMax: 5
-  closeMax: 100
-  eyePosition: {fileID: 1964493712022166}
-  eyePosVerify: {fileID: 1964493712022166}
-  lookTarget: {fileID: 0}
-  lookTargetTracking: {fileID: 0}
-  targetAffinity: 0
-  targetAffinityPercentage: 0.5
-  invertTracking: 0
-  trackBehind: 1
-  randomBlink: 1
-  maxBlinkInterval: 5
-  broadcastNeeded: 0
-  broadcastCS: 0
-  broadcastCSReceiversCount: 0
-  prevBroadcastCSReceiversCount: 0
-  expandBroadcastCS: 0
-  broadcastCSReceivers: []
-  propagateToChildrenCS: 0
-  selectedCustomShape: 0
-  noneShapeIndex: 0
-  excludeEyeShapes: 1
-  dynamicCustomShapes: []
-  customShapeCount: 0
-  expandCustomShapes: 0
-  customShapes: []
-  randomCustomShapes: 1
-  maxCustomShapeInterval: 3
-  randomCSBlendSpeedMin: 0.75
-  randomCSBlendSpeedMax: 2
-  randomCSRangeOfMotionMin: 10
-  randomCSRangeOfMotionMax: 40
-  randomCSDurationMin: 0.25
-  randomCSDurationMax: 2.5
-  csNotRandomToggle: 0
-  useCustomShapesOnly: 0
-  showEyeShapes: 1
-  showTracking: 1
-  showEyeProps: 1
-  showCustom: 1
-  showBroadcast: 1
-  showBroadcastCS: 1
-  expandShapeGroups: 0
-  groups: []
-  shapeGroupCount: 0
---- !u!114 &114494175647488760
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1976067524, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skinnedMeshRenderer: {fileID: 13742596}
-  prevSkinnedMeshRenderer: {fileID: 13742596}
-  getSkndMshRndr: 0
-  audioSrc: {fileID: 82835433177783740}
-  audioClip: {fileID: 0}
-  blendShapes:
-  - blend.emote_Scared
-  - blend.emote_Ecstatic
-  - blend.emote_Surprised
-  - blend.emote_AngryOther
-  - blend.emote_AngryExtreme
-  - blend.emote_Frown
-  - blend.emote_Smile
-  - blend.shape_WinkR
-  - blend.shape_EyesSquint
-  - blend.shape_WinkL
-  - blend.shape_SmileR
-  - blend.shape_SmileL
-  - blend.shape_browUpL
-  - blend.shape_browUpR
-  - blend.shape_EyesOpen
-  - blend.shape_mouthO
-  - blend.shape_EyesClose
-  - blend.shape_browsDown
-  - blend.shape_browsClosed
-  - blend.shape_browsUp
-  - blend.shape_smileOpen
-  - blend.shape_smileClosed
-  saySmallIndex: 21
-  sayMediumIndex: 15
-  sayLargeIndex: 1
-  saySmallTrigger: 0.0005
-  sayMediumTrigger: 0.0015
-  sayLargeTrigger: 0.0025
-  audioUpdateDelay: 0.08
-  blendSpeed: 10
-  rangeOfMotion: 100
-  isTalking: 0
-  prevIsTalking: 0
-  lockShapes: 0
-  broadcast: 0
-  broadcastReceiversCount: 0
-  expandBroadcast: 0
-  broadcastReceivers: []
-  propagateToChildren: 0
-  average: 0
-  say: 
-  sayIndex: 0
-  sayAmount:
-    saySmall: 0
-    sayMedium: 0
-    sayLarge: 0
-  prevAudioUpdateDelay: 0
---- !u!114 &114531017440561508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1964493712022166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -818653955, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showGizmo: 1

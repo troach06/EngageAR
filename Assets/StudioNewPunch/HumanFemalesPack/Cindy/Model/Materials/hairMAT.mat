@@ -69,7 +69,9 @@ Material:
     - _Cutoff: 0.009
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _GlossMapScale: 1
     - _Glossiness: 1
+    - _GlossyReflections: 1
     - _KKPrimaryRootShift: 0.275
     - _KKPrimarySpecularExponent: 77
     - _KKReflectionGrayScale: 8.4
@@ -80,6 +82,8 @@ Material:
     - _Mode: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.0272
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZTest: 4
