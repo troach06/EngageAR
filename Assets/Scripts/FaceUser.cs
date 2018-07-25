@@ -39,13 +39,13 @@ public class FaceUser : MonoBehaviour
                 Quaternion r1 = Quaternion.LookRotation(transform.position - Camera.main.transform.position, Vector3.up);
                 Vector3 euler2 = transform.eulerAngles;
                 transform.rotation = Quaternion.Euler(euler2.x, r1.eulerAngles.y + 180, euler2.z);
-                if ((transform.rotation.y) > preY + 0.1f && canTurn)
+                if ((transform.rotation.y) > preY + 0.01f && canTurn)
                 {
                     GetComponent<Animator>().Play("Turn Left");
                     canTurn = false;
                     StartCoroutine(EnableTurn());
                 }
-                else if ((transform.rotation.y) < preY - 0.1f && canTurn)
+                else if ((transform.rotation.y) < preY - 0.01f && canTurn)
                 {
                     GetComponent<Animator>().Play("Turn Right");
                     canTurn = false;
