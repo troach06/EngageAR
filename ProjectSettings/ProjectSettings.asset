@@ -737,7 +737,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 23600e78-8fec-4020-b159-1d86296ac384
-  projectName: SeminarVR
+  projectName: EngageAR
   organizationId: tyler-roach
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
