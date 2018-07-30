@@ -1043,7 +1043,6 @@ GameObject:
   - component: {fileID: 82325019546546764}
   - component: {fileID: 114678729121790860}
   - component: {fileID: 114593298124719656}
-  - component: {fileID: 114948803444489874}
   m_Layer: 0
   m_Name: Cindy
   m_TagString: AI
@@ -3426,17 +3425,6 @@ MonoBehaviour:
     sayMedium: 0
     sayLarge: 0
   prevAudioUpdateDelay: 0
---- !u!114 &114948803444489874
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1789266327106426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50e01cc170408094f8907565a8907640, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!137 &137165928759912544
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

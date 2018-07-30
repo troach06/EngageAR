@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class FaceUser : MonoBehaviour
 {
     Vector3 prePos;
+    Animator animator = new Animator();
     float preY;
+    Transform user;
     bool canTurn = true;
+
     // Use this for initialization
     void Start()
     {
@@ -16,6 +19,8 @@ public class FaceUser : MonoBehaviour
         transform.rotation = Quaternion.Euler(euler2.x, r1.eulerAngles.y + 180, euler2.z);
         prePos = Camera.main.transform.position;
         preY = transform.rotation.y;
+        animator = GetComponent<Animator>();
+        user = Camera.main.transform;
     }
 
     // Update is called once per frame
@@ -24,11 +29,12 @@ public class FaceUser : MonoBehaviour
         Face();
     }
 
+    // Determine avatar rotation based on relative user position
     void Face()
     {
         if (SceneManager.GetActiveScene().name == "Menu")
         {
-            Quaternion r1 = Quaternion.LookRotation(transform.position - Camera.main.transform.position, Vector3.up);
+            Quaternion r1 = Quaternion.LookRotation(transform.position - user.position, Vector3.up);
             Vector3 euler2 = transform.eulerAngles;
             transform.rotation = Quaternion.Euler(euler2.x, r1.eulerAngles.y + 180, euler2.z);
         }
@@ -36,27 +42,28 @@ public class FaceUser : MonoBehaviour
         {
             if (Camera.main.transform.position != prePos)
             {
-                Quaternion r1 = Quaternion.LookRotation(transform.position - Camera.main.transform.position, Vector3.up);
+                Quaternion r1 = Quaternion.LookRotation(transform.position - user.position, Vector3.up);
                 Vector3 euler2 = transform.eulerAngles;
                 transform.rotation = Quaternion.Euler(euler2.x, r1.eulerAngles.y + 180, euler2.z);
-                if ((transform.rotation.y) > preY + 0.01f && canTurn)
+                if ((transform.rotation.y) > preY + 0.1f && canTurn)
                 {
-                    GetComponent<Animator>().Play("Turn Left");
+                    animator.Play("Turn Left");
                     canTurn = false;
                     StartCoroutine(EnableTurn());
                 }
-                else if ((transform.rotation.y) < preY - 0.01f && canTurn)
+                else if ((transform.rotation.y) < preY - 0.1f && canTurn)
                 {
-                    GetComponent<Animator>().Play("Turn Right");
+                    animator.Play("Turn Right");
                     canTurn = false;
                     StartCoroutine(EnableTurn());
                 }
             }
-            prePos = Camera.main.transform.position;
+            prePos = user.position;
             preY = transform.rotation.y;
         }
     }
 
+    // Allow avatar to turn again
     IEnumerator EnableTurn()
     {
         yield return new WaitForSeconds(1.5f);

@@ -18,6 +18,7 @@ public class ConversationHandler : MonoBehaviour
     private fsSerializer _serializer = new fsSerializer();
     private Dictionary<string, object> _input = null;
     private Dictionary<string, object> _context = null;
+
     void Start()
     {
         Credentials credentials = new Credentials(username, password, url);
@@ -36,8 +37,7 @@ public class ConversationHandler : MonoBehaviour
         GetComponent<SpeechHandler>().StartRecording();
     }
 
-    //  Send a simple message using a string
-
+    // Set context by sending messages to assistant
     public void Message()
     {
         if (!_input.ContainsKey("text"))
@@ -133,30 +133,8 @@ public class ConversationHandler : MonoBehaviour
         Dictionary<string, object> dict = Json.Deserialize(customData["json"].ToString()) as Dictionary<string, object>;
         Dictionary<string, object> output = dict["output"] as Dictionary<string, object>;
         Debug.Log("JSON INFO: " + customData["json"].ToString());
-
-        // Send new/update context variables to the Watson Conversation Service
-
-        //else if (conversationContext.ContainsKey("temperature"))
-        //{
-        //    string currentTemperature = weather.temperatureNumber.ToString();
-        //    conversationContext.Remove("temperature");
-        //    conversationContext.Add("temperature", currentTemperature);
-        //    //Debug.Log("Current Temperature: " + currentTemperature);
-        //}
-
-        //// $ call context variables
-        //var context = dict["context"] as Dictionary<string, object>;
-        //if (context["destination_city"] != null)
-        //{
-        //    destinationCity = context["destination_city"].ToString();
-        //    Debug.Log("Destination city: " + destinationCity);
-        //}
-        //if (context["departure_city"] != null)
-        //{
-        //    departureCity = context["departure_city"].ToString();
-        //}
-
         List<object> text = output["text"] as List<object>;
+
         if (text.Count > 0)
         {
             GetComponent<SpeechHandler>().Active = false;

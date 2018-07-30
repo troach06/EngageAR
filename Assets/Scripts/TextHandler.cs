@@ -11,6 +11,7 @@ public class TextHandler : MonoBehaviour {
     public string username, password, workspaceID, versionDate, url, messageText;
     public GameObject person;
     TextToSpeech _textToSpeech;
+
     void Start()
     {
         Credentials credentials = new Credentials(username, password, url);
@@ -24,6 +25,7 @@ public class TextHandler : MonoBehaviour {
         Log.Error("ExampleTextToSpeech.OnFail()", "Error received: {0}", error.ToString());
     }
 
+    // Set voice type according to current scene/avatar
     public void Synthesize()
     {
         if (SceneManager.GetActiveScene().name == "Abigail")
@@ -46,6 +48,7 @@ public class TextHandler : MonoBehaviour {
         StartCoroutine(PlayClip(clip));
     }
 
+    // Play audio clip on avatar and allow for mouth movement according to audio track
     public IEnumerator PlayClip(AudioClip clip)
     {
         GetComponent<SpeechHandler>().StopRecording();

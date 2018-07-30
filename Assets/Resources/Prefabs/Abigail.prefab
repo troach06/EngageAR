@@ -465,7 +465,6 @@ GameObject:
   - component: {fileID: 114700295443044834}
   - component: {fileID: 82829598157233968}
   - component: {fileID: 114019090440349876}
-  - component: {fileID: 114327564142365844}
   m_Layer: 0
   m_Name: Abigail
   m_TagString: AI
@@ -3068,17 +3067,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 180160e575b384f47a701a79b2e1a1cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114327564142365844
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1327599880884566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50e01cc170408094f8907565a8907640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114364101434042740

@@ -996,7 +996,6 @@ GameObject:
   - component: {fileID: 82534058239477086}
   - component: {fileID: 114625144166068216}
   - component: {fileID: 114203356939821944}
-  - component: {fileID: 114185059245618810}
   m_Layer: 0
   m_Name: Britney
   m_TagString: AI
@@ -3207,17 +3206,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114185059245618810
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1529672311156992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50e01cc170408094f8907565a8907640, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114203356939821944
 MonoBehaviour:
   m_ObjectHideFlags: 1
